@@ -12,8 +12,8 @@
   <DisplayName DefaultValue="Frequency Visualizer" />
   <Description DefaultValue="An interactive frequency visualizer for Microsoft Word."/>
   
-  <IconUrl DefaultValue="https://developer.microsoft.com/en-us/microsoft-365/favicon.ico" />
-  <HighResolutionIconUrl DefaultValue="https://developer.microsoft.com/en-us/microsoft-365/favicon.ico"/>
+  <IconUrl DefaultValue="https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/assets/icon-80.png"/>
   
   <SupportUrl DefaultValue="https://github.com/DarthMudder/FrequenzVisualizer" />
   
