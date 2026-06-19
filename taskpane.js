@@ -1,13 +1,17 @@
-/* global Office, document, requestAnimationFrame */
+/* global Office, document, requestAnimationFrame, window */
 
 let currentFreq = 369;
 let animationTime = 0;
 let canvas, ctx;
 
-// This function is called when Word has fully loaded the Add-in
+// This function is called when Word or the browser environment initializes the Office JS framework
 Office.onReady((info) => {
+    
+    // 1. Initialize the visualizer immediately so it works in BOTH the web browser and Microsoft Word
+    initVisualizer();
+    
+    // 2. Execute Word-specific configurations only when running inside the desktop application
     if (info.host === Office.HostType.Word) {
-        initVisualizer();
         
         // --- AUTO-OPEN CONFIGURATION ---
         // Tells Word to automatically open this Add-in when the document is opened
@@ -24,13 +28,6 @@ Office.onReady((info) => {
         // -------------------------------
     }
 });
-
-// Fallback in case the script is loaded outside of Office (e.g., standard web browser)
-window.onload = () => {
-    if(!window.Office || !window.Office.context) {
-        initVisualizer();
-    }
-};
 
 function initVisualizer() {
     const slider = document.getElementById("freqSlider");
@@ -93,7 +90,6 @@ function drawWave() {
     ctx.lineWidth = 3;
 
     // Adjust the visual density of the waves based on the frequency.
-    // Since 20,000 Hz would look like a solid block on a small canvas, we scale it logarithmically.
     let visualFrequency = Math.log10(currentFreq + 1) * 2; 
 
     for (let x = 0; x < canvas.width; x++) {
