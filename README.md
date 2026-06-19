@@ -1,5 +1,7 @@
 # Frequency Visualizer for Microsoft Word 🌊
 
+🚀 **[CLICK HERE FOR A LIVE DEMO IN YOUR BROWSER](https://darthmudder.github.io/FrequenzVisualizer/taskpane.html)** 🚀
+
 A sleek, interactive Microsoft Word Web Add-in that visualizes audio frequencies using an HTML5 Canvas animation. 
 
 Originally built for documents related to sound therapy, binaural beats, and audio engineering, this tool runs directly in the Word task pane, allowing users to interact with frequency visualizations while reading or editing the document.
