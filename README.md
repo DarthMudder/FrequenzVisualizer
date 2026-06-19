@@ -40,12 +40,15 @@ Since this Add-in is not published in the official Microsoft AppSource store, yo
 6. Restart Microsoft Word.
 
 ### Step 3: Launch the Add-in
-1. Open Word, go to the **Insert** tab on the ribbon.
-2. Click **My Add-ins** (or Get Add-ins).
-3. Click on the **Shared Folder** tab at the top.
-4. Select **FrequencyVisualizer** and click **Add**.
-5. The interactive frequency tool will now open in the right task pane!
+Depending on your version of Microsoft Word, the Add-ins button might be located in different places:
+- **Modern Word (Microsoft 365):** Go to the **Home** tab and look for the **Add-ins** button on the far right.
+- **Classic Word:** Go to the **Insert** tab and click **My Add-ins**.
+- **Developer Method:** Go to the **Developer** tab and click **Add-ins**.
 
+Once you open the Add-ins menu:
+1. Click on the **Shared Folder** tab at the top.
+2. Select **FrequencyVisualizer** and click **Add**.
+3. The interactive frequency tool will now open in the right task pane!
 ## 💻 For Developers
 
 If you want to fork this project and develop it further:
